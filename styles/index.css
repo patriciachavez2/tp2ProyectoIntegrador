@@ -1,0 +1,40 @@
+/*clases del home*/
+
+.subtitulo {
+    margin: 15px; 
+    padding: 0;
+}
+
+.tituloInterno {
+    font-size: 23px;
+    color:rgb(75, 73, 73);
+   
+}
+.contenedor {   /*contenedor del article y todo lo que hay dentro*/
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 22px;
+}
+
+.imagen{
+    float: right; /*que flote a la derecha*/
+    margin: 0 0 20px 20px; /*arriba margen 0,a la derecha 0,abajo de 20px y a la izq de 20 px */
+    max-width: 25%; /*ancho maximo de la imagen dentro del contenedor 15%*/
+    height: auto; /*alto auto*/
+}
+
+.imagen2 {
+    float: left;
+    margin: 0 20px 20px 0; /*arriba margen 0,a la derecha 20px,abajo de 20px y a la izq 0 */
+    max-width: 25%; /*ancho maximo de la imagen dentro del contenedor 15%*/
+    height: auto; /*alto auto*/
+}
+
+p {
+    font-size: 19px;
+    
+}
+
+p a { /*aplica para los links dentro e un p */
+    color: aliceblue;
+}

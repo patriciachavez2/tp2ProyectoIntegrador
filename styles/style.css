@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot:wght@400;600&display=swap');
+
+body{
+    font-family:Protest Riot;
+    background: linear-gradient(to right,rgb(243, 59, 243),rgb(159, 163, 159)); /*el to right indica que el degradado va de izquierda a derecha */
+    padding: 0;
+    margin: 0; /*los ponemos a 0 para poder manejarlo individual despues*/
+    padding-bottom: 100px; /*da un espaciado interno entre los elementos (interno con el externo)*/
+}
+
+header {  /*todo lo de dentro del header tendra*/
+    text-align: center;
+}
+
+.active {
+    background-color:rgb(255,0,255) ;
+}
+
+ul {
+    list-style-type: none; /*borra los circulos de la lista desordenada*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* overfolow:controla el comportamiento del contenido de un elemento. hidden : cualquier contenido que se extienda más allá de los bordes del contenedor será recortado y no será visible.*/
+    background-color: black; /*color de fondo del ul seria el color del contenedor nav*/
+}
+
+li {
+    float : left; /*se utiliza para hacer que un elemento se "flote" hacia la izquierda dentro de su contenedor.*/
+}
+
+/*lo siguiente aplica para los link(a)dentro de la lista(li)*/
+li a {
+    display: block;   /* es útil cuando quieres forzar que un elemento en línea se comporte como un elemento de bloque/para que ocupe todo el ancho*/
+    color: aliceblue; /*color de letras */
+    text-align: center;
+    padding: 10px;
+    text-decoration: none; /*para que no este subrayado el link*/   
+}
+
+li a:hover:not(.active){    /*el not .actives es para que cuando pase el cursor por hom que es de clase active no ste activo que solo se aplique a lo demas el hover*/
+    background-color: rgb(56, 55, 55); /*fondo gris cuando paso el cursor sobre los li*/
+
+}
+
+h1 {
+    background-color: rgb(234, 241, 248) ;
+    padding: 10px;
+    margin: 0; /*crea espaciosentre elementos en este caso 0 */
+    
+}
+
+footer {
+     background-color: black;
+     color:aliceblue;
+     padding: 15px;
+     margin: 0;
+     text-align: center;
+     position: fixed; /*queda fijo cuando haces scroll*/
+     bottom: 0;    /*se utiliza para posicionar un elemento en relación con su contenedor más cercano que esté posicionado (es decir, que tenga una propiedad position establecida en relative, absolute, fixed o sticky). Específicamente, establece la posición inferior del elemento a 0 unidades del borde inferior de su contenedor posicionado.*/
+     /*El resultado es que el elemento .elemento se coloca en la parte inferior del contenedor .contenedor, con su borde inferior alineado con el borde inferior del contenedor.*/
+     width: 100%;
+     height: 70px;
+}

@@ -1,0 +1,40 @@
+.contenedor{
+    background-color: rgba(170, 32, 147, 0.521);
+    border-radius: 10px;  /*puntas redondeadas*/
+    margin: 10px 0; /*10px de vertical y 0 horizontal xq despues lo centraremos y achicarmos*/
+    padding: 20px; /*para q haya un poco de borde antes de los inputs*/
+    width: 50%;  /*para q se vaya al medio, quede a la mitad*/
+    position: relative;
+    left: 25%; /*para q quede centrado 25% de cada lado, derecho e izquierdo*/
+}
+
+input[type="text"],  /*para q me quede cada campo alineado para completar*/
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0; /*8px es para vertical*/
+    border: 1px solid rgb(32, 31, 31);
+    border-radius: 10px;
+    box-sizing: border-box;  /*Se completa la "visión de caja". Respeta el ancho del input. Especifica el comportamiento del ancho y el alto con respecto al hijo*/
+}
+
+input[type="submit"]{
+    width: 100%; /*ancho completo*/ 
+    background-color: rgb(250, 65, 240);
+    color: white;
+    padding: 15px 20px; /*para q sea un botón ancho*/
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /*se cambia el cursor a pointer (manito) en el botón enviar*/
+}
+
+textarea:focus,input:focus{ /*Cambia de color cdo pasamos el mouse*/
+    background-color: rgb(238, 122, 232);
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(238, 122, 232);
+}

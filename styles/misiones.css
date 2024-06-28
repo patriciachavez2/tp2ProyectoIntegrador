@@ -1,0 +1,38 @@
+.contenedor{
+     display: flex;
+     justify-content: center;
+ 
+ }
+ 
+ table{
+     border-collapse: collapse;
+     
+     border: 2px solid rgb(116, 123, 122);
+     letter-spacing: 1px; /*para q quede mas ancho y ocupe bien todo*/
+     font-size: 1.5rem; /*em y rem tienen q ver con el tamaño de la fuente defoult. sería 1.5 de la fuente del root, de la fuente base*/
+     background-color: rgb(209, 216, 215); /*en td lo dejamos sin background color, para q la primera tenga su propio color*/
+ }
+ 
+ th{  /*titulo de la tabla. Cabecera*/
+     text-align: center;
+     border: 1px solid  rgb(24, 24, 24);
+     padding: 10px;
+     background-color: rgb(131, 138, 137);  /*lo  ponemos un poquito mas oscuro*/
+ }
+ 
+ td{  /*son las filas de las tablas*/
+    text-align: center; 
+    border: 1px solid rgb(98, 100, 99);;
+    padding: 10px;  /*igual q th*/
+    
+  
+ }
+ 
+ h2{ /*titulo secundario. Misiones de Z4X, el robot*/
+     margin: 0;
+     padding: 20px;
+ }
+ 
+ tr:hover{  /*para q el color cambie un poquito cuando uno pasa el mouse*/
+     background-color: rgb(214, 233, 230);
+ }
